@@ -1,0 +1,180 @@
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body{
+  min-height:100vh;
+  background: radial-gradient(circle at top, #2b1055, #120021);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:#ffffff;
+}
+
+.container{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  padding:40px;
+}
+
+.card{
+  width:900px;
+  background:rgba(20, 10, 40, 0.95);
+  border-radius:20px;
+  padding:40px 50px;
+  border:1px solid rgba(170,120,255,0.4);
+  box-shadow:0 0 40px rgba(170,120,255,0.25);
+}
+
+h1{
+  text-align:center;
+  font-size:40px;
+  margin-bottom:5px;
+  letter-spacing:1px;
+}
+
+.subtitle{
+  text-align:center;
+  margin-bottom:40px;
+  opacity:0.8;
+}
+
+.table-row{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:22px 30px;
+  border:1px solid rgba(170,120,255,0.35);
+  border-radius:14px;
+  margin-bottom:22px;
+  background:rgba(40,20,80,0.6);
+}
+
+.table-name{
+  font-size:22px;
+  font-weight:600;
+  letter-spacing:1px;
+}
+
+.table-actions a{
+  color:#d6b4ff;
+  text-decoration:none;
+  margin-left:18px;
+  font-size:16px;
+  position:relative;
+}
+
+.table-actions a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-3px;
+  width:0%;
+  height:2px;
+  background:#c77dff;
+  transition:0.3s;
+}
+
+.table-actions a:hover::after{
+  width:100%;
+}
+
+.table-actions a:hover{
+  color:#ffffff;
+}
+
+/* ===== ΠΙΝΑΚΑΣ ΔΕΔΟΜΕΝΩΝ ===== */
+.data-table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:30px;
+  background:rgba(40,20,80,0.9);
+  border-radius:14px;
+  overflow:hidden;
+}
+
+.data-table th,
+.data-table td{
+  padding:14px 18px;
+  text-align:left;
+}
+
+.data-table th{
+  background:#5a189a;
+  color:#ffffff;
+  font-weight:600;
+}
+
+.data-table tr{
+  border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.data-table tr:hover{
+  background:rgba(123,47,247,0.15);
+}
+
+.data-table td{
+  color:#e0d4ff;
+}
+
+/* ===== ΚΟΥΜΠΙ ΠΙΣΩ ===== */
+.back-btn{
+  display:inline-block;
+  margin-top:30px;
+  padding:14px 28px;
+  border-radius:30px;
+  background:linear-gradient(135deg,#7b2ff7,#c77dff);
+  color:white;
+  text-decoration:none;
+  font-weight:600;
+  box-shadow:0 0 15px rgba(199,125,255,0.5);
+  transition:0.3s;
+}
+
+.back-btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 0 25px rgba(199,125,255,0.8);
+}
+
+.form{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+  margin-top:20px;
+}
+
+.form input{
+  padding:14px 18px;
+  border-radius:14px;
+  border:none;
+  background:#1f1147;
+  color:white;
+}
+
+.form input::placeholder{
+  color:#bdaaff;
+}
+
+.msg{
+  margin:20px 0;
+  padding:14px 20px;
+  border-radius:10px;
+  font-weight:600;
+  text-align:center;
+}
+
+.msg.success{
+  background:rgba(40,180,99,0.2);
+  color:#2ecc71;
+  border:1px solid #2ecc71;
+}
+
+.msg.danger{
+  background:rgba(231,76,60,0.2);
+  color:#e74c3c;
+  border:1px solid #e74c3c;
+}
